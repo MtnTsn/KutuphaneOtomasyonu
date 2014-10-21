@@ -1,0 +1,11 @@
+K:\PROJE\Kutuphane\Kutuphane\bin\Debug\Kutuphane.exe
+K:\PROJE\Kutuphane\Kutuphane\bin\Debug\Kutuphane.pdb
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\Kutuphane.Form1.resources
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\Kutuphane.Properties.Resources.resources
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\GenerateResource.read.1.tlog
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\GenerateResource.write.1.tlog
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\Kutuphane.exe
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\Kutuphane.pdb
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\Kutuphane.formYoneticiEkrani.resources
+K:\PROJE\Kutuphane\Kutuphane\obj\x86\Debug\Kutuphane.formEkleSilGuncelle.resources

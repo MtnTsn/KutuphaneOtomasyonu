@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83FD85DA-7648-4D0E-8080-1B964A320040}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kutuphane</RootNamespace>
+    <AssemblyName>Kutuphane</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArananKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArananKitaplar.Designer.cs">
+      <DependentUpon>ArananKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapAyrintilariKullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapAyrintilariKullanici.Designer.cs">
+      <DependentUpon>KitapAyrintilariKullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapAyrintilariYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapAyrintilariYonetici.Designer.cs">
+      <DependentUpon>KitapAyrintilariYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapDuzenle.Designer.cs">
+      <DependentUpon>KitapDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkrani.Designer.cs">
+      <DependentUpon>KullaniciEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciKayit.Designer.cs">
+      <DependentUpon>KullaniciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanicilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanicilar.Designer.cs">
+      <DependentUpon>Kullanicilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSetKitaplar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSetKitaplar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSetKitapOzetYazar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSetKitapOzetYazar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSetKullanicilar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSetKullanicilar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSetYazar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSetYazar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnaylanmayiBekleyenIstekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnaylanmayiBekleyenIstekler.Designer.cs">
+      <DependentUpon>OnaylanmayiBekleyenIstekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YazarDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazarDuzenle.Designer.cs">
+      <DependentUpon>YazarDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YazarEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazarEkle.Designer.cs">
+      <DependentUpon>YazarEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YazarGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YazarGuncelle.Designer.cs">
+      <DependentUpon>YazarGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiEkrani.Designer.cs">
+      <DependentUpon>YoneticiEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiKayit.Designer.cs">
+      <DependentUpon>YoneticiKayit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ArananKitaplar.resx">
+      <DependentUpon>ArananKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapAyrintilariKullanici.resx">
+      <DependentUpon>KitapAyrintilariKullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapAyrintilariYonetici.resx">
+      <DependentUpon>KitapAyrintilariYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapDuzenle.resx">
+      <DependentUpon>KitapDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkrani.resx">
+      <DependentUpon>KullaniciEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciKayit.resx">
+      <DependentUpon>KullaniciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanicilar.resx">
+      <DependentUpon>Kullanicilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnaylanmayiBekleyenIstekler.resx">
+      <DependentUpon>OnaylanmayiBekleyenIstekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="YazarDuzenle.resx">
+      <DependentUpon>YazarDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YazarEkle.resx">
+      <DependentUpon>YazarEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YazarGuncelle.resx">
+      <DependentUpon>YazarGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiEkrani.resx">
+      <DependentUpon>YoneticiEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiKayit.resx">
+      <DependentUpon>YoneticiKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="KutuphaneDataSetKitaplar.xsc">
+      <DependentUpon>KutuphaneDataSetKitaplar.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSetKitaplar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSetKitaplar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSetKitaplar.xss">
+      <DependentUpon>KutuphaneDataSetKitaplar.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSetKitapOzetYazar.xsc">
+      <DependentUpon>KutuphaneDataSetKitapOzetYazar.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSetKitapOzetYazar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSetKitapOzetYazar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSetKitapOzetYazar.xss">
+      <DependentUpon>KutuphaneDataSetKitapOzetYazar.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSetKullanicilar.xsc">
+      <DependentUpon>KutuphaneDataSetKullanicilar.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSetKullanicilar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSetKullanicilar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSetKullanicilar.xss">
+      <DependentUpon>KutuphaneDataSetKullanicilar.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSetYazar.xsc">
+      <DependentUpon>KutuphaneDataSetYazar.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSetYazar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSetYazar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSetYazar.xss">
+      <DependentUpon>KutuphaneDataSetYazar.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
